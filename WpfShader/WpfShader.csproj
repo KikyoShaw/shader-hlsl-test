@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command=".\effect\CompileEffects.bat" />
+  </Target>
+
+  <ItemGroup>
+    <None Remove="effect\GrayFilter.ps" />
+    <None Remove="Resources\1.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="effect\GrayFilter.ps" />
+    <Resource Include="Resources\1.jpg" />
+  </ItemGroup>
+
+</Project>
