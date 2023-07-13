@@ -29,7 +29,7 @@ color.rgb = lerp(color.rgb, gray.xxx, amount);
 
 如此一来，根据提供的 "amount" 参数，该着色器将为输入图像生成适当的灰度图像。
 
-#### 1.GrayFilter
+#### 2.GrayFilter
 
 自定义的 ColorProcessing 函数处理颜色，该函数接受四个参数：c（当前像素的颜色），h（色调[0, 360]），s（饱和度[-1, 1]），以及l（亮度[-1, 1]）
 	1.定义两个 3x3 的 matrixH 和 matrixH2 矩阵。
