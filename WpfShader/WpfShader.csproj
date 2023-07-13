@@ -13,12 +13,14 @@
 
   <ItemGroup>
     <None Remove="effect\GrayFilter.ps" />
+    <None Remove="effect\GrayScale.ps" />
     <None Remove="effect\Ripple.ps" />
     <None Remove="Resources\1.jpg" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="effect\GrayFilter.ps" />
+    <Resource Include="effect\GrayScale.ps" />
     <Resource Include="effect\Ripple.ps" />
     <Resource Include="Resources\1.jpg" />
   </ItemGroup>

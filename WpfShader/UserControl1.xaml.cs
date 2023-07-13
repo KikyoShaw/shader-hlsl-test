@@ -8,7 +8,7 @@ namespace WpfShader
     /// </summary>
     public partial class UserControl1 : UserControl
     {
-        private GrayFilter _effect = new GrayFilter();
+        private RippleEffect _effect = new RippleEffect();
         public UserControl1()
         {
             InitializeComponent();
