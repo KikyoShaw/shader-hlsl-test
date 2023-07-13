@@ -41,6 +41,8 @@ color.rgb = lerp(color.rgb, gray.xxx, amount);
 	7.将亮度 l 添加到调整后的颜色值 c1。
 	8.使用 saturate 函数确保颜色分量在 0 到 1 的范围内。
 
+设置合适的亮度，通过调整饱和度转换为灰度图像。
+
 核心代码
 ```
 float4 ColorProcessing(float4 c, float h, float s, float l)
